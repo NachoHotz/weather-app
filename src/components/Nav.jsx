@@ -7,12 +7,12 @@ import "./styles/About.css";
 function Nav({ onSearch }) {
   return (
     <nav className="navbar navbar-dark bg-dark">
-        <span className="navbar-brand">
-          Weather App
-        </span>
-
+        <Link to='/'>
+          <span className="navbar-brand">
+            Weather App
+          </span>
+        </Link>
       <ul className="links">
-        <Link to='/'>Home</Link>
         <Link to='/about'>About</Link>
       </ul>
 
