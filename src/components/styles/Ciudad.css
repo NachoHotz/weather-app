@@ -1,0 +1,11 @@
+.container {
+  align-items: center; 
+  justify-content: center;
+  background-color: skyblue;
+  width: fit-content;
+  margin-left: 34em;
+  border-radius: 10px;
+  margin-top: 20px;
+  padding: 1em;
+
+}
