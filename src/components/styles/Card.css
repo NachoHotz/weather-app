@@ -6,6 +6,7 @@ body {
   margin: 20px;
   width: 18rem;
   background-color: lightblue;
+  border: 2px solid black;
   border-radius: 10px;
 }
 
