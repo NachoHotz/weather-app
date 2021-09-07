@@ -8,7 +8,7 @@ import Ciudad from "../components/Ciudad.jsx";
 
 const apiKey = "4ae2636d8dfbdc3044bede63951a019b";
 
-function App() {
+export default function App() {
   const [cities, setCities] = useState([]);
 
   function onClose(id) {
@@ -36,7 +36,6 @@ function App() {
             latitud: recurso.coord.lat,
             longitud: recurso.coord.lon,
           };
-
           setCities((oldCities) => [...oldCities, ciudad]);
         } else {
           alert("City not found");
@@ -57,15 +56,12 @@ function App() {
   return (
     <div className="App">
       <Route path="/" render={() => <Nav onSearch={onSearch} />} />
-
       <Route
         exact
         path="/"
         render={() => <Cards cities={cities} onClose={onClose} />}
       />
-
       <Route path="/about" component={About} />
-
       <Route
         exact
         path="/ciudad/:ciudadId"
@@ -76,5 +72,3 @@ function App() {
     </div>
   );
 }
-
-export default App;
