@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import './styles/SearchBar.css';
+import './SearchBar.css';
 
 export default function SearchBar({ onSearch }) {
   const [city, setCity] = useState("");

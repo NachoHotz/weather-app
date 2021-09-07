@@ -1,5 +1,5 @@
 import React from "react";
-import "./styles/Ciudad.css";
+import "./Ciudad.css";
 
 export default function Ciudad({ city }) {
   return (

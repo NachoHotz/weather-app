@@ -1,10 +1,10 @@
 import React, { useState } from "react";
 import { Route } from "react-router-dom";
 import "./App.css";
-import Nav from "../components/Nav.jsx";
-import Cards from "../components/Cards.jsx";
-import About from "../components/About.jsx";
-import Ciudad from "../components/Ciudad.jsx";
+import Nav from '../components/Nav/Nav';
+import Cards from '../components/Cards/Cards';
+import About from '../components/About/About';
+import Ciudad from '../components/CityDetail/Ciudad';
 
 const apiKey = "4ae2636d8dfbdc3044bede63951a019b";
 
