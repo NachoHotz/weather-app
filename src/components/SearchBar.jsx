@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import './styles/SearchBar.css';
 
 export default function SearchBar({ onSearch }) {
   const [city, setCity] = useState("");
@@ -13,6 +14,7 @@ export default function SearchBar({ onSearch }) {
     >
       <input
         type="text"
+        className='search_input'
         placeholder="City name..."
         value={city}
         onChange={(e) => setCity(e.target.value)}
