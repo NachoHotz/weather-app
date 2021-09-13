@@ -1,14 +1,14 @@
-import React from "react";
-import "./About.css";
+import React from 'react';
+import './About.css';
 
 export default function About() {
-  return <div id="container">
-    <h5>App made the following technologies:</h5>
-        <ul>
-            <li>HTML</li>
-            <li>CSS</li>
-            <li>Javascript</li>
-            <li>React</li>
-        </ul>
-    </div>;
+  return (
+    <div id="container">
+      <h5>First React App. Allows the user to:</h5>
+      <ul>
+        <li>Search and see the basic weather info about a city.</li>
+        <li>See more detailed info about a city´s weather.</li>
+      </ul>
+    </div>
+  );
 }
