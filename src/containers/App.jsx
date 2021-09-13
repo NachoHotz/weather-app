@@ -1,12 +1,12 @@
-import React, { useState } from "react";
-import { Route } from "react-router-dom";
-import "./App.css";
+import React, { useState } from 'react';
+import { Route } from 'react-router-dom';
+import './App.css';
 import Nav from '../components/Nav/Nav';
 import Cards from '../components/Cards/Cards';
 import About from '../components/About/About';
 import Ciudad from '../components/CityDetail/Ciudad';
 
-const apiKey = "4ae2636d8dfbdc3044bede63951a019b";
+const apiKey = '4ae2636d8dfbdc3044bede63951a019b';
 
 export default function App() {
   const [cities, setCities] = useState([]);
@@ -18,7 +18,7 @@ export default function App() {
   function onSearch(ciudad) {
     //Llamado a la API del clima
     fetch(
-      `http://api.openweathermap.org/data/2.5/weather?q=${ciudad}&appid=${apiKey}&units=metric`
+      `http://api.openweathermap.org/data/2.5/weather?q=${ciudad}&appid=${apiKey}&units=metric`,
     )
       .then((r) => r.json())
       .then((recurso) => {
@@ -38,7 +38,7 @@ export default function App() {
           };
           setCities((oldCities) => [...oldCities, ciudad]);
         } else {
-          alert("City not found");
+          alert('City not found');
         }
       });
   }

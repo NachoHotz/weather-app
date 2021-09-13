@@ -1,6 +1,6 @@
-import React from "react";
-import "./Cards.css";
-import Card from "../Card/Card";
+import React from 'react';
+import './Cards.css';
+import Card from '../Card/Card';
 
 export default function Cards({ cities, onClose }) {
   return (

@@ -1,6 +1,6 @@
-import React from "react";
-import { Link } from "react-router-dom";
-import "./Card.css";
+import React from 'react';
+import { Link } from 'react-router-dom';
+import './Card.css';
 
 export default function Card({ min, max, temp, name, img, onClose, id }) {
   return (
@@ -19,7 +19,7 @@ export default function Card({ min, max, temp, name, img, onClose, id }) {
         <div id="actualTemp">
           <p>Actual</p>
           <p>
-            {temp} {"º"}
+            {temp} {'º'}
           </p>
         </div>
 
@@ -37,7 +37,7 @@ export default function Card({ min, max, temp, name, img, onClose, id }) {
           <div className="col-sm-4 col-md-4 col-lg-4">
             <img
               className="iconoClima"
-              src={"http://openweathermap.org/img/wn/" + img + "@2x.png"}
+              src={'http://openweathermap.org/img/wn/' + img + '@2x.png'}
               width="80"
               height="80"
               alt=""
